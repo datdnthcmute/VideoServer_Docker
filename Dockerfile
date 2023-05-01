@@ -1,5 +1,5 @@
 # base ubuntu 18.04 image
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 ## system-wide dependencies
 RUN apt-get update && \
