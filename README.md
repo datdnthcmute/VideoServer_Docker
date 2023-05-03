@@ -21,12 +21,16 @@ Các yêu cầu dưới đây phải được cài đặt:
 ### Chạy với Docker
  
 #### Sử dụng Docker-compose
-```
+
 Đầu tiên sử dụng git clone đồ án của nhóm về:
->git clone https://github.com/datdnthcmute/VideoServer_Docker
-Tiến hành chạy docker-compose để tạo container:
->docker-compose up -d
+```sh
+git clone https://github.com/datdnthcmute/VideoServer_Docker
 ```
+Tiến hành chạy docker-compose để tạo container:
+```sh
+docker-compose up -d
+```
+
 
 :Lưu ý:  
  Khi chạy với docker compose mọi yêu cầu dịch vụ như trên FFmpeg, MongoDB, RabbitMQ sẽ không được yêu cầu tải trên localhost mà sẽ được tải tự động vào container của docker.
