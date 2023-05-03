@@ -8,7 +8,7 @@ Thành viên nhóm 20:
 
 ## Các yêu cầu về môi trường
 
-Các yêu cầu dưới đâu phải được cài đặt:
+Các yêu cầu dưới đây phải được cài đặt:
 
  * Python (>= 3.6)
  * FFmpeg
