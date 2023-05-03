@@ -23,7 +23,7 @@ Các yêu cầu dưới đây phải được cài đặt:
 #### Sử dụng Docker-compose
 ```
 Đầu tiên sử dụng git clone đồ án của nhóm về:
-> git clone https://github.com/superdesk/video-server-app.git
+> git clone https://github.com/datdnthcmute/VideoServer_Docker
 Tiến hành chạy docker-compose để tạo container:
 > docker-compose up -d
 ```
