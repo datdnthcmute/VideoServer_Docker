@@ -1,9 +1,13 @@
-# [HTTP API video editor](https://github.com/superdesk/video-server) application instance 
+# [HTTP API video server](https://github.com/datdnthcmute/VideoServer_Group20) nhóm 20  
 
+<b><i>GVHD: TS. Huỳnh Xuân Phụng</i></b>
+Thành viên nhóm 20:
+- Đặng Nguyễn Thiên Đạt - 20110629
+- Nguyễn Thị Bích Liên - 20110335   
 
-## Requirements
+## Các yêu cầu về môi trường
 
-These services must be installed, configured and running:
+Các yêu cầu dưới đâu phải được cài đặt:
 
  * Python (>= 3.6)
  * FFmpeg
@@ -11,48 +15,24 @@ These services must be installed, configured and running:
  * RabbitMQ (celery backend)
  
  
-## Installation steps:
+## Các bước cài đặt:
  
-### Manual installation
-```
-git clone https://github.com/superdesk/video-server-app.git
-cd video-server-app/
-pip install -r requirements.txt
-honcho start
-```
+### Chạy với Docker
  
- :exclamation:  
- Using Gunicorn is not required, you can use any WSGI HTTP Server.  
- Using Honcho is not required, you can run processes listed in `Procfile` with another tool (e.g. Supervisor).
- 
-### Run with docker
- 
-#### docker-compose
+#### Sử dụng Docker-compose
 ```
-git clone https://github.com/superdesk/video-server-app.git
-docker-compose up -d
+Đầu tiên sử dụng git clone đồ án của nhóm về:
+> git clone https://github.com/superdesk/video-server-app.git
+Tiến hành chạy docker-compose để tạo container:
+> docker-compose up -d
 ```
 
-:exclamation:  
- When running with docker compose, services listed above such as FFmpeg, MongoDB, rabbitMQ are not required on the host.
+:Lưu ý:  
+ Khi chạy với docker compose mọi yêu cầu dịch vụ như trên FFmpeg, MongoDB, RabbitMQ sẽ không được yêu cầu tải trên localhost mà sẽ được tải tự động vào container của docker.
 
-#### standalone video server container
 
-If you prefer to run only a video server container and connect it to already running on **localhost** MongoDB and RabbitMQ, 
-you can use next commands:
+### Superdesk
 
-```
-git clone https://github.com/superdesk/video-server-app.git
-cd video-server-app/
-# build an image
-docker build -t <image-name> .
-# run a container using "host" network mode
-docker run -d --network host --name <container-name> <image-name>
-```
-
-Method described above will work only on Linux hosts, and is not supported on Docker Desktop for Mac, Docker Desktop for Windows, or Docker EE for Windows Server.
-As an option you can use [links](https://docs.docker.com/network/links/) or [network](https://docs.docker.com/network/) to conntect your containers.
-
-### Using with Superdesk
+Bản quyền thuộc về Superdesk việc sử dụng ở đây chỉ dành cho mục đích học tập 
 
 To use a video-server with a [Superdesk](https://github.com/superdesk/superdesk-core) see the [docs](https://github.com/superdesk/superdesk-core/blob/develop/docs/video_server.rst)
