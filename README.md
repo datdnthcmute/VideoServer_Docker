@@ -1,6 +1,7 @@
 # [HTTP API video server](https://github.com/datdnthcmute/VideoServer_Group20) nhóm 20  
 
 <b><i>GVHD: TS. Huỳnh Xuân Phụng</i></b>
+
 Thành viên nhóm 20:
 - Đặng Nguyễn Thiên Đạt - 20110629
 - Nguyễn Thị Bích Liên - 20110335   
