@@ -23,9 +23,9 @@ Các yêu cầu dưới đây phải được cài đặt:
 #### Sử dụng Docker-compose
 ```
 Đầu tiên sử dụng git clone đồ án của nhóm về:
-> git clone https://github.com/datdnthcmute/VideoServer_Docker
+>git clone https://github.com/datdnthcmute/VideoServer_Docker
 Tiến hành chạy docker-compose để tạo container:
-> docker-compose up -d
+>docker-compose up -d
 ```
 
 :Lưu ý:  
